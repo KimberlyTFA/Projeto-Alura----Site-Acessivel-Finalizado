@@ -64,9 +64,7 @@ section {
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
@@ -82,8 +80,9 @@ section {
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
+                url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
+    z-index: 0;
     /* Ajuste o tamanho conforme necessário */
 }
 
@@ -114,6 +113,10 @@ h2 {
     background-size: 180px 180px;
 }
 
+#tropicalia .fundo-galeria {
+    background: none
+}
+
 #contato {
     background-image: url('img/4965007.jpg');
     background-size: cover;
@@ -139,7 +142,6 @@ h2 {
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
 }
@@ -156,7 +158,7 @@ h2 {
 }
 
 .opcoes-acessibilidade{
-    margin-top: 10px;
+    margin-top:10px;
     display: flex;
     flex-direction: column;
 }
@@ -164,12 +166,10 @@ h2 {
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
-
 .apresenta-lista{
     display: none;
 }
 
-/* Alto contraste */
 .alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
@@ -177,7 +177,7 @@ h2 {
 
 .alto-contraste header,
 .alto-contraste footer,
-.alto-contraste formulario{
+.alto-contraste .formulario{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
@@ -190,7 +190,7 @@ h2 {
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary{
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-fundo)
 }
 
 .alto-contraste #tropicalia {
@@ -200,7 +200,6 @@ h2 {
 .alto-contraste #galeria {
     background-color: var(--alto-contraste-fundo);
 }
-
 .alto-contraste .fundo-galeria {
     background: none;
 }
